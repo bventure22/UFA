@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chama cha Mpira wa Miguu Ubungo (UFA) | Official Website</title>
     
-    <!-- Fonts -->
+    <!-- Fonts: Updated to Kanit (Headings) and Outfit (Body) for a modern, sporty look -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- UPDATED: Changed Montserrat to Poppins for the body font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -29,10 +28,9 @@
             --text-dark: #222222;
             --bg-light: #f4f7f9;
 
-            /* Typography */
-            --font-heading: 'Oswald', sans-serif;
-            /* UPDATED: Changed to Poppins */
-            --font-body: 'Poppins', sans-serif;
+            /* Typography - UPDATED */
+            --font-heading: 'Kanit', sans-serif;
+            --font-body: 'Outfit', sans-serif;
 
             /* Transitions & Shadows */
             --transition-smooth: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -51,7 +49,7 @@
         img { max-width: 100%; height: auto; display: block; }
         
         .section-padding { padding: 80px 5%; }
-        .section-title { text-align: center; font-size: 2.5rem; color: var(--primary-blue); margin-bottom: 40px; position: relative; }
+        .section-title { text-align: center; font-size: 2.8rem; color: var(--primary-blue); margin-bottom: 40px; position: relative; letter-spacing: 1px; }
         .section-title::after { content: ''; width: 60px; height: 4px; background: var(--sky-blue); display: block; margin: 10px auto 0; }
 
         /* ==================== 
@@ -74,12 +72,12 @@
         .brand img.logo { height: 60px; transition: var(--transition-smooth); }
         header.scrolled .brand img.logo { height: 50px; }
         .brand-text { color: var(--white); display: flex; flex-direction: column; }
-        .brand-text h1 { font-size: 1.2rem; letter-spacing: 1px; margin: 0; }
-        .brand-text span { font-size: 0.7rem; font-family: var(--font-body); opacity: 0.8; letter-spacing: 0.5px; }
+        .brand-text h1 { font-size: 1.3rem; letter-spacing: 1px; margin: 0; }
+        .brand-text span { font-size: 0.75rem; font-family: var(--font-body); opacity: 0.8; letter-spacing: 0.5px; }
         .brand-tff { height: 35px; margin-left: 10px; border-left: 1px solid rgba(255,255,255,0.2); padding-left: 10px; }
 
         .nav-links { display: flex; gap: 25px; }
-        .nav-links li a { color: var(--white); font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; transition: var(--transition-smooth); }
+        .nav-links li a { color: var(--white); font-weight: 500; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; transition: var(--transition-smooth); }
         .nav-links li a:hover { color: var(--sky-blue); }
 
         .hamburger { display: none; color: var(--white); font-size: 1.5rem; cursor: pointer; }
@@ -105,7 +103,7 @@
         .slide.active .slide-bg { transform: scale(1); }
         .slide::after {
             content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(to right, rgba(26, 71, 115, 0.9) 0%, rgba(26, 71, 115, 0.4) 100%); z-index: 2;
+            background: linear-gradient(to right, rgba(26, 71, 115, 0.95) 0%, rgba(26, 71, 115, 0.3) 100%); z-index: 2;
         }
 
         .slide-content {
@@ -114,12 +112,12 @@
         }
         .slide.active .slide-content { transform: translateY(0); opacity: 1; }
         
-        .slide-content h2 { font-size: 4rem; line-height: 1.1; margin-bottom: 15px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+        .slide-content h2 { font-size: 4.5rem; line-height: 1.1; margin-bottom: 15px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); letter-spacing: 2px; }
         .slide-content h2 span { color: var(--sky-blue); }
-        .slide-content p { font-size: 1.2rem; font-weight: 300; max-width: 600px; margin-bottom: 30px; }
+        .slide-content p { font-size: 1.25rem; font-weight: 300; max-width: 600px; margin-bottom: 30px; line-height: 1.6; }
         .btn-primary {
-            display: inline-block; padding: 12px 30px; background: var(--sky-blue); color: var(--white);
-            font-family: var(--font-heading); font-size: 1.1rem; letter-spacing: 1px;
+            display: inline-block; padding: 12px 35px; background: var(--sky-blue); color: var(--white);
+            font-family: var(--font-heading); font-size: 1.2rem; letter-spacing: 1px;
             border-radius: 3px; transition: var(--transition-smooth); border: 2px solid var(--sky-blue);
         }
         .btn-primary:hover { background: transparent; color: var(--sky-blue); box-shadow: var(--shadow-glow); }
@@ -143,27 +141,27 @@
         .news-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
         .news-overlay {
             position: absolute; bottom: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(to top, rgba(26, 71, 115, 0.9) 0%, rgba(76, 164, 224, 0) 100%);
+            background: linear-gradient(to top, rgba(26, 71, 115, 0.95) 0%, rgba(76, 164, 224, 0) 100%);
             display: flex; flex-direction: column; justify-content: flex-end; padding: 20px;
             transition: var(--transition-smooth);
         }
         .news-card:hover .news-img { transform: scale(1.08); }
         .news-card:hover .news-overlay { background: rgba(76, 164, 224, 0.85); }
         
-        .news-category { font-size: 0.75rem; font-weight: 700; color: var(--accent-green); background: var(--white); padding: 4px 10px; border-radius: 20px; align-self: flex-start; margin-bottom: 10px; text-transform: uppercase; }
-        .news-overlay h3 { color: var(--white); font-size: 1.3rem; margin-bottom: 5px; }
-        .news-card:nth-child(1) .news-overlay h3 { font-size: 2rem; }
-        .news-date { color: rgba(255,255,255,0.8); font-size: 0.85rem; font-family: var(--font-body); }
+        .news-category { font-size: 0.8rem; font-weight: 600; color: var(--accent-green); background: var(--white); padding: 4px 12px; border-radius: 20px; align-self: flex-start; margin-bottom: 10px; text-transform: uppercase; }
+        .news-overlay h3 { color: var(--white); font-size: 1.4rem; margin-bottom: 5px; letter-spacing: 0.5px; }
+        .news-card:nth-child(1) .news-overlay h3 { font-size: 2.2rem; }
+        .news-date { color: rgba(255,255,255,0.8); font-size: 0.9rem; font-family: var(--font-body); }
 
         /* ==================== 
            BROADCAST TICKER 
            ==================== */
         .ticker-section { background: var(--dark-blue); color: var(--white); padding: 10px 0; display: flex; align-items: center; border-bottom: 3px solid var(--accent-brown); }
-        .ticker-title { background: var(--sky-blue); padding: 10px 20px; font-family: var(--font-heading); font-size: 1.1rem; letter-spacing: 1px; z-index: 2; position: relative; white-space: nowrap; }
+        .ticker-title { background: var(--sky-blue); padding: 10px 20px; font-family: var(--font-heading); font-size: 1.2rem; letter-spacing: 1.5px; z-index: 2; position: relative; white-space: nowrap; }
         .ticker-wrap { overflow: hidden; white-space: nowrap; width: 100%; position: relative; }
         .ticker-move { display: inline-block; animation: tickerScroll 25s linear infinite; }
-        .ticker-item { display: inline-block; padding: 0 30px; font-weight: 500; font-size: 0.95rem; border-right: 1px solid rgba(255,255,255,0.2); }
-        .ticker-item span.live { color: #ff4757; font-weight: bold; animation: pulse 1.5s infinite; }
+        .ticker-item { display: inline-block; padding: 0 30px; font-weight: 500; font-size: 1rem; border-right: 1px solid rgba(255,255,255,0.2); }
+        .ticker-item span.live { color: #ff4757; font-weight: 700; animation: pulse 1.5s infinite; }
         
         @keyframes tickerScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
@@ -199,8 +197,8 @@
             text-align: center; color: var(--white); transition: var(--transition-smooth);
         }
         .explore-card:hover .explore-content { background: rgba(76, 164, 224, 0.3); border-color: var(--sky-blue); bottom: 30px; }
-        .explore-content h3 { font-size: 1.5rem; margin-bottom: 10px; }
-        .explore-content p { font-size: 0.9rem; font-weight: 300; }
+        .explore-content h3 { font-size: 1.6rem; margin-bottom: 10px; letter-spacing: 0.5px; }
+        .explore-content p { font-size: 0.95rem; font-weight: 300; }
 
         /* ==================== 
            MEET THE TEAMS 
@@ -214,7 +212,7 @@
         }
         .team-badge:hover { transform: translateY(-10px); border-bottom-color: var(--sky-blue); }
         .team-badge i { font-size: 3rem; color: var(--primary-blue); margin-bottom: 15px; } /* Placeholder for team logos */
-        .team-badge h4 { color: var(--text-dark); font-size: 1rem; }
+        .team-badge h4 { color: var(--text-dark); font-size: 1.1rem; letter-spacing: 0.5px; }
 
         /* ==================== 
            FOOTER (MASTERCLASS) 
@@ -225,14 +223,14 @@
         }
         .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 50px; }
         
-        .footer-col h4 { font-size: 1.3rem; margin-bottom: 20px; color: var(--sky-blue); position: relative; padding-bottom: 10px; }
+        .footer-col h4 { font-size: 1.4rem; margin-bottom: 20px; color: var(--sky-blue); position: relative; padding-bottom: 10px; letter-spacing: 1px; }
         .footer-col h4::after { content: ''; position: absolute; left: 0; bottom: 0; width: 40px; height: 2px; background: var(--accent-brown); }
         
         .footer-logo-area img { width: 120px; margin-bottom: 20px; }
-        .footer-logo-area p { font-size: 0.9rem; line-height: 1.6; opacity: 0.8; margin-bottom: 15px; max-width: 300px; }
+        .footer-logo-area p { font-size: 0.95rem; line-height: 1.7; opacity: 0.8; margin-bottom: 15px; max-width: 300px; }
         
         .footer-links li { margin-bottom: 12px; }
-        .footer-links a { font-size: 0.95rem; opacity: 0.8; transition: var(--transition-smooth); }
+        .footer-links a { font-size: 1rem; opacity: 0.8; transition: var(--transition-smooth); }
         .footer-links a:hover { opacity: 1; color: var(--sky-blue); padding-left: 5px; }
         
         .social-icons { display: flex; gap: 15px; }
@@ -245,9 +243,9 @@
         .tff-partner { background: rgba(255,255,255,0.05); padding: 20px; border-radius: 8px; text-align: center; border: 1px solid rgba(255,255,255,0.1); }
         .tff-partner img { width: 80px; margin: 0 auto 10px; opacity: 0.7; transition: opacity 0.3s; }
         .tff-partner:hover img { opacity: 1; }
-        .tff-partner p { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-green); }
+        .tff-partner p { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-green); font-weight: 600; }
 
-        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center; font-size: 0.85rem; opacity: 0.7; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center; font-size: 0.9rem; opacity: 0.7; }
 
         /* ==================== 
            RESPONSIVE DESIGN 
@@ -255,7 +253,7 @@
         @media (max-width: 1024px) {
             .masonry-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
             .news-card:nth-child(1) { grid-column: span 1; grid-row: span 1; } /* Disable strict masonry on tablets */
-            .news-card:nth-child(1) .news-overlay h3 { font-size: 1.3rem; }
+            .news-card:nth-child(1) .news-overlay h3 { font-size: 1.4rem; }
             .footer-grid { grid-template-columns: 1fr 1fr; }
         }
 
@@ -269,27 +267,33 @@
             .hamburger { display: block; z-index: 1001; }
             .brand-tff { display: none; }
 
-            /* UPDATED: Mobile Hero Resizing adjustments for images to be fully viewed */
+            /* UPDATED: Mobile Hero Resizing adjustments */
+            .hero {
+                height: 75vh; /* Reduced height to fit mobile viewport naturally */
+                min-height: 550px;
+            }
             .slide-bg {
                 background-size: contain; 
-                background-position: center; 
+                background-position: top center; 
                 background-repeat: no-repeat;
-                background-attachment: scroll; /* Removing fixed background for consistent mobile rendering */
+                background-attachment: scroll; /* Removing fixed background for robust mobile rendering */
+                height: 55%; /* Ensure image fits safely in the top half */
             }
-            /* Dark gradient shift so text remains readable against the background */
             .slide::after {
-                background: linear-gradient(to top, rgba(26, 71, 115, 0.95) 0%, rgba(26, 71, 115, 0.3) 100%);
+                /* Gradient adjusted to create a solid blue box at the bottom for text readability */
+                background: linear-gradient(to bottom, rgba(26, 71, 115, 0.05) 0%, rgba(26, 71, 115, 0.85) 45%, var(--primary-blue) 100%);
             }
             .slide-content {
                 display: flex;
                 flex-direction: column;
-                justify-content: flex-end; /* Push text towards the bottom */
-                padding-bottom: 80px;
+                justify-content: flex-end; /* Text sits at the bottom */
+                padding-bottom: 50px;
                 height: 100%;
+                text-align: center; /* Center aligned for better mobile layout */
             }
+            .slide-content h2 { font-size: 2.8rem; letter-spacing: 1px; }
+            .slide-content p { font-size: 1rem; margin: 0 auto 20px; }
             
-            .slide-content h2 { font-size: 2.5rem; }
-            .slide-content p { font-size: 1rem; }
             .ticker-title { display: none; } /* Hide title on mobile for more room */
             .footer-grid { grid-template-columns: 1fr; text-align: center; }
             .footer-col h4::after { left: 50%; transform: translateX(-50%); }
@@ -330,7 +334,6 @@
         <div class="carousel" id="heroCarousel">
             <!-- Slide 1 -->
             <div class="slide active">
-                <!-- UPDATED: Replaced hero1.png with hero3.png -->
                 <div class="slide-bg" style="background-image: url('hero3.png');"></div>
                 <div class="slide-content">
                     <h2>Karibu UFA <br><span>Welcome to UFA</span></h2>
@@ -349,7 +352,6 @@
             </div>
             <!-- Slide 3 -->
             <div class="slide">
-                <!-- UPDATED: Replaced third img src with hero1.png -->
                 <div class="slide-bg" style="background-image: url('hero1.png');"></div>
                 <div class="slide-content">
                     <h2>Soka La Vijana <br><span>Youth Development</span></h2>
@@ -388,7 +390,7 @@
                 <div class="news-overlay">
                     <span class="news-category">League</span>
                     <h3>Ubungo Stadium Set to Host UFA Championship Final</h3>
-                    <span class="news-date"><i class="far fa-calendar-alt"></i> Oct 24, 2023</span>
+                    <span class="news-date"><i class="far fa-calendar-alt"></i> Oct 24, 2026</span>
                 </div>
             </div>
 
@@ -397,7 +399,7 @@
                 <div class="news-overlay">
                     <span class="news-category">National</span>
                     <h3>UFA Players Called Up for Taifa Stars Camp</h3>
-                    <span class="news-date"><i class="far fa-calendar-alt"></i> Oct 22, 2023</span>
+                    <span class="news-date"><i class="far fa-calendar-alt"></i> Oct 22, 2026</span>
                 </div>
             </div>
 
@@ -406,7 +408,7 @@
                 <div class="news-overlay">
                     <span class="news-category">Youth</span>
                     <h3>New Grassroots Initiative Launched in Kimara</h3>
-                    <span class="news-date"><i class="far fa-calendar-alt"></i> Oct 18, 2023</span>
+                    <span class="news-date"><i class="far fa-calendar-alt"></i> Oct 18, 2026</span>
                 </div>
             </div>
 
@@ -415,17 +417,16 @@
                 <div class="news-overlay">
                     <span class="news-category">Official</span>
                     <h3>Annual General Meeting Concludes Successfully</h3>
-                    <span class="news-date"><i class="far fa-calendar-alt"></i> Oct 15, 2023</span>
+                    <span class="news-date"><i class="far fa-calendar-alt"></i> Oct 15, 2026</span>
                 </div>
             </div>
             
             <div class="news-card">
-                <!-- Using a placeholder related color bg since we ran out of specific images -->
                 <div class="news-img" style="background: var(--primary-blue); width: 100%; height: 100%;"></div>
                 <div class="news-overlay">
                     <span class="news-category">Referees</span>
                     <h3>Referee Training Seminar Scheduled for November</h3>
-                    <span class="news-date"><i class="far fa-calendar-alt"></i> Oct 10, 2023</span>
+                    <span class="news-date"><i class="far fa-calendar-alt"></i> Oct 10, 2026</span>
                 </div>
             </div>
 
@@ -476,7 +477,6 @@
     <section class="section-padding teams-section" id="teams">
         <h2 class="section-title">Timu Zetu (Our Teams)</h2>
         <div class="teams-grid">
-            <!-- Abstract placeholders for local clubs -->
             <div class="team-badge"><i class="fas fa-shield-alt"></i><h4>Ubungo City FC</h4></div>
             <div class="team-badge"><i class="fas fa-futbol"></i><h4>Kimara United</h4></div>
             <div class="team-badge"><i class="fas fa-crown"></i><h4>Makongo Stars</h4></div>
