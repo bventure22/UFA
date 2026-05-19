@@ -8,7 +8,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- UPDATED: Changed Montserrat to Poppins for the body font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -30,7 +31,8 @@
 
             /* Typography */
             --font-heading: 'Oswald', sans-serif;
-            --font-body: 'Montserrat', sans-serif;
+            /* UPDATED: Changed to Poppins */
+            --font-body: 'Poppins', sans-serif;
 
             /* Transitions & Shadows */
             --transition-smooth: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -266,6 +268,25 @@
             .nav-links.active { right: 0; }
             .hamburger { display: block; z-index: 1001; }
             .brand-tff { display: none; }
+
+            /* UPDATED: Mobile Hero Resizing adjustments for images to be fully viewed */
+            .slide-bg {
+                background-size: contain; 
+                background-position: center; 
+                background-repeat: no-repeat;
+                background-attachment: scroll; /* Removing fixed background for consistent mobile rendering */
+            }
+            /* Dark gradient shift so text remains readable against the background */
+            .slide::after {
+                background: linear-gradient(to top, rgba(26, 71, 115, 0.95) 0%, rgba(26, 71, 115, 0.3) 100%);
+            }
+            .slide-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end; /* Push text towards the bottom */
+                padding-bottom: 80px;
+                height: 100%;
+            }
             
             .slide-content h2 { font-size: 2.5rem; }
             .slide-content p { font-size: 1rem; }
@@ -309,8 +330,8 @@
         <div class="carousel" id="heroCarousel">
             <!-- Slide 1 -->
             <div class="slide active">
-                <!-- UPDATED HERO 1 SRC HERE -->
-                <div class="slide-bg" style="background-image: url('hero1.png');"></div>
+                <!-- UPDATED: Replaced hero1.png with hero3.png -->
+                <div class="slide-bg" style="background-image: url('hero3.png');"></div>
                 <div class="slide-content">
                     <h2>Karibu UFA <br><span>Welcome to UFA</span></h2>
                     <p>The beating heart of Ubungo football. Fostering local talent, organizing elite grassroots leagues, and building community through the beautiful game.</p>
@@ -319,7 +340,6 @@
             </div>
             <!-- Slide 2 -->
             <div class="slide">
-                <!-- UPDATED HERO 2 SRC HERE -->
                 <div class="slide-bg" style="background-image: url('hero2.png');"></div>
                 <div class="slide-content">
                     <h2>Vipaji Vyetu <br><span>Our Talent</span></h2>
@@ -329,7 +349,8 @@
             </div>
             <!-- Slide 3 -->
             <div class="slide">
-                <div class="slide-bg" style="background-image: url('https://i.ibb.co/v4v8fM1/UFA-Youth.jpg');"></div>
+                <!-- UPDATED: Replaced third img src with hero1.png -->
+                <div class="slide-bg" style="background-image: url('hero1.png');"></div>
                 <div class="slide-content">
                     <h2>Soka La Vijana <br><span>Youth Development</span></h2>
                     <p>Investing in the future. UFA youth academies provide structure, discipline, and opportunity for the next generation of football stars.</p>
@@ -567,14 +588,6 @@
 
         // Initialize Carousel
         setInterval(nextSlide, slideInterval);
-
-        // Optional: Pause Carousel on Hover (Uncomment if desired)
-        /*
-        const carousel = document.getElementById('heroCarousel');
-        let sliderTimer = setInterval(nextSlide, slideInterval);
-        carousel.addEventListener('mouseenter', () => clearInterval(sliderTimer));
-        carousel.addEventListener('mouseleave', () => sliderTimer = setInterval(nextSlide, slideInterval));
-        */
     </script>
 </body>
 </html>
